@@ -150,20 +150,23 @@ const SignaturePad: React.FC<SignaturePadProps> = ({
 
             <div className="mt-4 flex flex-wrap gap-3">
                 <button
+                    type="button"
                     onClick={() => signatureCanvasRef.current?.clear()}
                     className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition-colors shadow-sm disabled:opacity-50"
-                    disabled={!hasSigned}
+                    disabled={!hasSigned} // 只有当有签名时才可操作
                 >
                     清空
                 </button>
                 <button
+                    type="button"
                     onClick={() => signatureCanvasRef.current?.undo()}
                     className="px-4 py-2 bg-yellow-500 text-white rounded-md hover:bg-yellow-600 transition-colors shadow-sm disabled:opacity-50"
-                    disabled={!hasSigned} // 只有当有签名时才可撤销
+                    disabled={!hasSigned} 
                 >
                     撤销
                 </button>
                 <button
+                    type="button"
                     onClick={handleSavePNG}
                     className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors shadow-sm disabled:opacity-50"
                     disabled={!hasSigned}
@@ -171,6 +174,7 @@ const SignaturePad: React.FC<SignaturePadProps> = ({
                     保存为 PNG
                 </button>
                 <button
+                    type="button"
                     onClick={handleSaveJPG}
                     className="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition-colors shadow-sm disabled:opacity-50"
                     disabled={!hasSigned}
