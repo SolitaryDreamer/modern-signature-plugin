@@ -16,7 +16,9 @@
     "dev": "vite",
     "build:js": "rollup -c",
     "build:types": "tsc -p tsconfig.json",
-    "build": "npm run build:js && npm run build:types",
+    "build:lib": "npm run build:js && npm run build:types",
+    "build:site": "vite build",
+    "build": "npm run build:lib && npm run build:site",
     "lint": "eslint .",
     "preview": "vite preview",
     "prepare": "npm run build"
