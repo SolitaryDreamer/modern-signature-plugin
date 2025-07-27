@@ -1,4 +1,4 @@
-import React, { useCallback, useRef, useState, useEffect } from "react";
+import { useCallback, useRef, useState, useEffect } from "react";
 import SignatureCanvas from "./SignatureCanvas";
 import SaveAsImage from "./SaveAsImage";
 import type { CanvasRef } from "./SignatureCanvas";
