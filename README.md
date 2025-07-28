@@ -1,6 +1,6 @@
 # Readme
 
-This is a handwritten signature plugin developed using TypeScript+TailwindCSS. Here is the <a href="https://SolitaryDreamer.github.io/modern-signature-plugin/">Demo</a>.
+This is a **Chinese** handwritten signature plugin developed using TypeScript+TailwindCSS. Here is the <a href="https://SolitaryDreamer.github.io/modern-signature-plugin/">Demo</a>.
 You can install it in your own project using the following command:
 
 ```bash
