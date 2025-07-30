@@ -1,10 +1,9 @@
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
-import typescript from "@rollup/plugin-typescript";
 
 export default {
-  input: "src/index.ts",
+  input: "dist/index.js",
   external: ["react", "react-dom"],
   output: [
     {
@@ -20,8 +19,7 @@ export default {
   ],
   plugins: [
     peerDepsExternal(),
-    resolve({ extensions: [".js", ".ts", ".tsx"] }),
+    resolve({ extensions: [".js"] }),
     commonjs(),
-    typescript(),
   ],
 };
